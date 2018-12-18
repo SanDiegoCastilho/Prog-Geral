@@ -1,5 +1,5 @@
 //San Diego - 18/12/2018 - 15:15.
-//Exercício 2.24
+//Exercício 2.25
 #include <iostream>
 #include <cmath>
 
