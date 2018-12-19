@@ -1,10 +1,14 @@
-//San Diego - 28/01/2018 - 15:52.
+//San Diego - 19/12/2018 - 13:38.
 //Classe Invoice - Questão 3.13.
 #include <string>
 
-using std::string;
+using namespace std;
 
 class Invoice{
+private:
+	string identifier, description;
+	int amount, price;
+
 public:
 	//Construtor.
 	Invoice(string, string, int, int);
@@ -35,8 +39,4 @@ public:
 
 	//Função responsável por calcular o valor total da fatura e retornar esse valor.
 	int getInvoiceAmount();
-
-private:
-	string identifier, description;
-	int amount, price;
 };

@@ -1,10 +1,9 @@
-//San Diego - 29/01/2018 - 08:41.
+//San Diego - 19/12/2018 - 13:45.
 //Definição das funções da classe Date.
 #include <iostream>
 #include "Date.h"
 
-using std::cout;
-using std::endl;
+using namespace std;
 
 //Construtor da Classe Date.
 Date::Date(int D, int M, int Y){

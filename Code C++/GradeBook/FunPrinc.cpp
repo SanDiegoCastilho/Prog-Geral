@@ -1,27 +1,26 @@
-//San Diego - 26/01/2018 - 12:03.
+//San Diego - 12/12/2018 - 13:00.
 //Introdução a classes e objetos.
 // Separando interfaces de implementação.
 #include <iostream>
-#include "GradeBook.h"
 
-using std::cout;
-using std::cin;
-using std::endl;	
+// #include "GradeBook.h"
+#include "Analysis.h"
+
+using namespace std;
 
 int main(){
 
-	GradeBook gradebook1("Ciencia da Computação", "San Diego");
-	GradeBook gradebook2("Engenharia da Computação", "Francisco");
+	// GradeBook gradebook1("Ciencia da Computação", "San Diego");
+	// GradeBook gradebook2("Engenharia da Computação", "Francisco");
 
-	gradebook1.displayMessage();
-	cout << "O nome do curso 1 é: " << gradebook1.getCourseName() << endl;
-	cout << "O nome do professor é: " << gradebook1.getInstructorName() << endl;
+	// gradebook1.displayMessage();
+	// gradebook1.determineClassAverage();
 
+	//Teste para a classe Analysis.
+	cout << "Classe Analysis" << endl;
 
-	cout << "O nome do curso 2 é: " << gradebook2.getCourseName() << endl;
-	cout << "O nome do professor é: "<< gradebook2.getInstructorName() << endl;
-
-	gradebook1.determineClassAverage();
+	Analysis application;
+	application.processExamResults();
 
 	return 0;
 }

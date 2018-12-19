@@ -2,10 +2,14 @@
 //Introdução a Orientação a Objetos com C++.
 #include <string>
 
-using std::string;
+using namespace std;
 
 //Declarando a classe GradeBook.
 class GradeBook{
+private:
+	string CourseName;
+	string InstructorName;
+
 public:
 	//O construtor inicializa courseName com uma string passada como argumento.
 	GradeBook(string, string);
@@ -27,8 +31,4 @@ public:
 
 	//Calcula a média da classe de acordo com as 10 notas inseridas pelo usuário.
 	void determineClassAverage();
-
-private:
-	string courseName;
-	string instructorName;
 };

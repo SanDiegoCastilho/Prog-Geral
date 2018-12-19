@@ -1,10 +1,14 @@
-//San Diego - 28/01/2018 - 20:14.
+//San Diego - 19/12/2018 - 13:42.
 //Classe Employee - Questão 3.14.
 #include <string>
 
-using std::string;
+using namespace std;
 
 class Employee{
+private:
+	string name, lastName;
+	int salary;
+
 public:
 	//Contrutor, inicializa os atributos dos objetos da classe Employee.
 	Employee(string, string, int);
@@ -26,8 +30,4 @@ public:
 
 	//Retorna o valor do salário de um objeto da classe Employee.
 	int getSalary();
-
-private:
-	string name, lastName;
-	int salary;
 }; 

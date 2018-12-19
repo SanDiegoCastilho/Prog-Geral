@@ -1,16 +1,12 @@
-//San Diego  - modificado - 19/01/2018 - 18:17
+//San Diego  - modificado - 19/12/2018 - 13:00
 //Introdução a Orientação a Objetos com C++.
 //Criando uma classe GradeBook e imprimir uma mensagem na tela.
+
 #include <iostream>
 #include <iomanip>
 #include "GradeBook.h"
 
-using std::cout;
-using std::cin;
-using std::endl;
-using std::fixed;
-
-using std::setprecision;
+using namespace std;
 
 //O construtor inicializa courseName com uma string passada como argumento.
 GradeBook::GradeBook(string nameCourse, string nameInstructor){
@@ -22,10 +18,10 @@ GradeBook::GradeBook(string nameCourse, string nameInstructor){
 void GradeBook::setCourseName(string name){ //Valida e Armazena o nome do curso no objeto.
 	
 	if (name.length() <= 26){
-		courseName = name; //Armazena o nome do curso no objeto.
+		CourseName = name; //Armazena o nome do curso no objeto.
 
 	}else{
-		courseName = name.substr(0, 25); //Armazena os primeiros 25 caracteres
+		CourseName = name.substr(0, 25); //Armazena os primeiros 25 caracteres
 
 		cout << "Name \"" << name << "\" exceeds maximum length (25). \n" 
 			 << "Limiting courseName to first 25 charracteres. \n" << endl; 
@@ -35,22 +31,25 @@ void GradeBook::setCourseName(string name){ //Valida e Armazena o nome do curso 
 	
 //Guarda o nome do instrutor.
 void GradeBook::setInstructorName(string name){
-	instructorName = name;
+	InstructorName = name;
 }
 
 //Função responsável por obter o nome do curso.
 string GradeBook::getCourseName (){
-	return courseName; //Retorna o courseName do objeto.
+	return CourseName; //Retorna o courseName do objeto.
 }
 
 //Retorna o nome do instrutor;
 string GradeBook::getInstructorName(){
-	return instructorName;
+	return InstructorName;
 }
 
 //Função que imprime uma mensagem na tela.
 void GradeBook::displayMessage(){
-	cout << "Welcome To The Grade Book!\n" << endl;
+	cout << "Welcome To The Grade Book!" << endl;
+	cout << "Curso: " << getCourseName() << endl;
+	cout << "Instrutor: " << getInstructorName() << endl;
+
 }
 	
 //Calcula e mostra a média de 10 notas inseridas pelo usuário.
@@ -75,8 +74,7 @@ void GradeBook::determineClassAverage(){
 
 	//Calcula a média.
 	if (gradeCounter != 0){
-		average = static_cast<double>(total) / gradeCounter; //Converte temporariamente Total para double e calcula a´média.
-	
+		average = static_cast<double>(total) / gradeCounter; //Converte temporariamente Total para double e calcula a média.
 	}
 
 	//Mostra os resultados.

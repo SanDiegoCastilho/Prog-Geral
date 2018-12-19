@@ -1,10 +1,9 @@
-//San Diego - 28/01/2018 - 16:41.
+//San Diego - 19/12/2018 - 13:41.
 //Função principal - Testando a classe Invoice - Questão 3.13.
 #include <iostream>
 #include "Invoice.h"
 
-using std::cout;
-using std::endl;
+using namespace std;
 
 int main(){
 
@@ -17,31 +16,31 @@ int main(){
 	cout << "Identificador fatura 1: " << fatura1.getIdentifier() << endl;
 	cout << "Identificador fatura 2: " << fatura2.getIdentifier() << endl;
 	cout << "Identificador fatura 3: " << fatura3.getIdentifier() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getDescription dos objetos da classe Invoice.
 	cout << "Descrição fatura 1: " << fatura1.getDescription() << endl;
 	cout << "Descrição fatura 2: " << fatura2.getDescription() << endl;
 	cout << "Descrição fatura 3: " << fatura3.getDescription() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getAmount dos objetos da classe Invoice.
 	cout << "A quantidade comprada de um item da fatura 1: " << fatura1.getAmount() << endl;
 	cout << "A quantidade comprada de um item da fatura 2: " << fatura2.getAmount() << endl;
 	cout << "A quantidade comprada de um item da fatura 3: " << fatura3.getAmount() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getPrice dos objetos da classe Invoice.
 	cout << "O preço de cada intem comprado na fatura 1: R$ " << fatura1.getPrice() << endl;
 	cout << "O preço de cada intem comprado na fatura 2: R$ " << fatura2.getPrice() << endl;
 	cout << "O preço de cada intem comprado na fatura 3: R$ " << fatura3.getPrice() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getInvoiceAmount dos objetos da classe Invoice.
 	cout << "O valor total da compra da fatura 1: R$ " << fatura1.getInvoiceAmount() << endl;
 	cout << "O valor total da compra da fatura 2: R$ " << fatura2.getInvoiceAmount() << endl;
 	cout << "O valor total da compra da fatura 3: R$ " << fatura3.getInvoiceAmount() << endl;
-	cout << "\n";	
+	cout << endl;	
 
 	//Testando as funções SET dos objetos da classe Invoice.
 	fatura1.setIdentifier("0987");
@@ -63,31 +62,31 @@ int main(){
 	cout << "O novo Identificador fatura 1: " << fatura1.getIdentifier() << endl;
 	cout << "O novo Identificador fatura 2: " << fatura2.getIdentifier() << endl;
 	cout << "O novo Identificador fatura 3: " << fatura3.getIdentifier() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getDescription dos objetos da classe Invoice.
 	cout << "A nova Descrição fatura 1: " << fatura1.getDescription() << endl;
 	cout << "A nova Descrição fatura 2: " << fatura2.getDescription() << endl;
 	cout << "A nova Descrição fatura 3: " << fatura3.getDescription() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getAmount dos objetos da classe Invoice.
 	cout << "A nova quantidade comprada de um item da fatura 1: " << fatura1.getAmount() << endl;
 	cout << "A nova quantidade comprada de um item da fatura 2: " << fatura2.getAmount() << endl;
 	cout << "A nova quantidade comprada de um item da fatura 3: " << fatura3.getAmount() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getPrice dos objetos da classe Invoice.
 	cout << "O novo preço de cada intem comprado na fatura 1: R$ " << fatura1.getPrice() << endl;
 	cout << "O novo preço de cada intem comprado na fatura 2: R$ " << fatura2.getPrice() << endl;
 	cout << "O novo preço de cada intem comprado na fatura 3: R$ " << fatura3.getPrice() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função getInvoiceAmount dos objetos da classe Invoice.
 	cout << "O novo valor total da compra da fatura 1: R$ " << fatura1.getInvoiceAmount() << endl;
 	cout << "O novo valor total da compra da fatura 2: R$ " << fatura2.getInvoiceAmount() << endl;
 	cout << "O novo valor total da compra da fatura 3: R$ " << fatura3.getInvoiceAmount() << endl;
-	cout << "\n";	
+	cout << endl;	
 
 	return 0;
 }

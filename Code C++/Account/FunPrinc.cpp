@@ -16,7 +16,7 @@ int main(){
 	cout << "Saldo da Conta 1: " << conta1.getBalance() << endl;
 	cout << "Saldo da Conta 2: " << conta2.getBalance() << endl;
 	cout << "Saldo da Conta 3: " << conta3.getBalance() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função Credit da Classe Account.
 	conta1.credit(200);
@@ -27,7 +27,7 @@ int main(){
 	cout << "Saldo da Conta 1: " << conta1.getBalance() << endl;
 	cout << "Saldo da Conta 2: " << conta2.getBalance() << endl;
 	cout << "Saldo da Conta 3: " << conta3.getBalance() << endl;
-	cout << "\n";
+	cout << endl;
 
 	//Testando a função Debit da Classe Account.
 	conta1.debit(500);
@@ -37,7 +37,7 @@ int main(){
 	cout << "Saldo da Conta 1: " << conta1.getBalance() << endl;
 	cout << "Saldo da Conta 2: " << conta2.getBalance() << endl;
 	cout << "Saldo da Conta 3: " << conta3.getBalance() << endl;
-	cout << "\n";
+	cout << endl;
 
 	return 0;
 }

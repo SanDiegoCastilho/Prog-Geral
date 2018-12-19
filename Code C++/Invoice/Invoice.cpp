@@ -1,17 +1,15 @@
-//San Diego - 28/01/2018 - 16:07.
+//San Diego - 19/12/2018 - 13:39.
 //Definindo as Funções da classe Invoice.
 #include <iostream>
 #include <string>
 #include "Invoice.h"
 
-using std::cout;
-using std::endl;
-using std::string;
+using namespace std;
 
 //Construtor, resposável por inicializar os valores dos objetos da classe Invoice.
-Invoice::Invoice(string ide, string desc, int amo, int pri){
+Invoice::Invoice(string id, string desc, int amo, int pri){
 	//guarda os respectivos valores.
-	setIdentifier(ide);
+	setIdentifier(id);
 	setDescription(desc);
 	setAmount(amo);
 	setPrice(pri);
@@ -39,7 +37,6 @@ string Invoice::getDescription(){
 
 //Função resposável por guardar a quantidade de itens comprados.
 void Invoice::setAmount(int amo){
-
 	if (amo < 0)
 		amount = 0;
 

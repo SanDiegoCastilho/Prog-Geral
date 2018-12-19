@@ -3,8 +3,7 @@
  #include <iostream>
  #include "Date.h"
 
-using std::cout;
-using std::endl;
+using namespace std;
 
 int main(){
 

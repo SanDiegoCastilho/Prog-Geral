@@ -10,7 +10,7 @@ Account::Account(int ValIni){
 	Balance = 0;
 
 	if (ValIni >= 0){ //Verifica a validade dos dados passados ao criar o objeto.
-		Account::credit(ValIni);
+		credit(ValIni);
 		cout << "Conta criada com sucesso.\n";
 
 	}else{

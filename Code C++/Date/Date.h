@@ -1,7 +1,10 @@
-//San Diego - 29/01/2018 - 08:33.
+//San Diego - 19/12/2018 - 13:45.
 //Classe Date - Questão 3.15.
 
 class Date{
+private:
+	int day, month, year;
+
 public:
 	//Construtor da Classe Date.
 	Date(int, int, int);
@@ -26,7 +29,4 @@ public:
 
 	//Imprime na tela a data no formato: DD/MM/YYYY.
 	void displayMessage();
-
-private:
-	int day, month, year;
 };
