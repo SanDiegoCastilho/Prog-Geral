@@ -15,13 +15,14 @@ void Analysis::processExamResults(){
 		cin >> result;
 
 		//Conta o número de aprovados e reprovados.
-		if (result == 1)
+		if (result == 1){
 			passes += 1;
-
-		else
+			studentCounter += 1;
+			
+		}else if (result == 2){	
 			failures += 1;
-
-		studentCounter += 1;
+			studentCounter += 1;
+		}
 	}	
 
 	//Exibe o número de aprovados e reprovados.
