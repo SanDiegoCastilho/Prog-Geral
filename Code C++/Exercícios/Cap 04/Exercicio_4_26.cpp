@@ -25,7 +25,14 @@ int main(){
 
 	Dig_1 = Palindrome % 10;
 
-
+	if (Dig_1 == Dig_5){
+		if (Dig_2 == Dig_4)
+			cout << "É um palíndromo" << endl;
+		else
+			cout << "Não é um Palíndromo" << endl;
+	}else{
+		cout << "Não é um palíndromo" << endl;
+	}
 
 	return 0;
 }
