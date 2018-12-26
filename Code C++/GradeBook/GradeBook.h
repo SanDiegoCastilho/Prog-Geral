@@ -1,4 +1,4 @@
-//San Diego  - modificado - 24/01/2018 - 15:30
+//San Diego  - modificado - 25/12/2018 - 12:30
 //Introdução a Orientação a Objetos com C++.
 #include <string>
 
@@ -9,6 +9,7 @@ class GradeBook{
 private:
 	string CourseName;
 	string InstructorName;
+	int aCount, bCount, cCount, dCount, eCount, fCount;
 
 public:
 	//O construtor inicializa courseName com uma string passada como argumento.
@@ -31,4 +32,10 @@ public:
 
 	//Calcula a média da classe de acordo com as 10 notas inseridas pelo usuário.
 	void determineClassAverage();
+
+	//insere números arbitrários de notas do usuário.
+	void inputGrades();
+
+	//Exibe um relatório baseado nas notas.
+	void displayGradeReport();
 };

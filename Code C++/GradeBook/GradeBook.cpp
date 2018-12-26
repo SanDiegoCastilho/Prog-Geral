@@ -1,6 +1,6 @@
-//San Diego  - modificado - 19/12/2018 - 13:00
+//San Diego  - modificado - 25/12/2018 - 12:26
 //Introdução a Orientação a Objetos com C++.
-//Criando uma classe GradeBook e imprimir uma mensagem na tela.
+//Utiliza uma instrução switch para contar as notas A, B, C, D e F
 
 #include <iostream>
 #include <iomanip>
@@ -12,6 +12,12 @@ using namespace std;
 GradeBook::GradeBook(string nameCourse, string nameInstructor){
 	setCourseName(nameCourse);
 	setInstructorName(nameInstructor);
+	aCount = 0;
+	bCount = 0;
+	cCount = 0;
+	dCount = 0;
+	eCount = 0;
+	fCount = 0;
 }
 
 //Função responsável por guardar o nome do curso.
@@ -80,4 +86,71 @@ void GradeBook::determineClassAverage(){
 	//Mostra os resultados.
 	cout << "\nTotal das " << gradeCounter <<" notas inseridas é: " << total << endl;
 	cout << "A média da turma vale: " << setprecision(2) << fixed <<  average << endl;
+}
+
+//Insere notas arbitrárias ao usuário.
+void GradeBook::inputGrades (){
+	int grade; //Nota inserida pelo usuário.
+
+	cout << "Enter the letter grades." << endl 
+		 << "Enter the EOF character to the end input."; 
+
+	while(grade = cin.get() != eof()){
+		//Determina a nota que foi inserida.
+		switch(grade){
+			case 'A':
+			case 'a':
+				aCount++;
+				break;
+
+			case 'B':
+			case 'b':
+				bCount++;
+				break;
+
+			case 'C':
+			case 'c':
+				cCount++;
+				break;
+
+			case 'D':
+			case 'd':
+				dCount++;
+				break;
+
+			case 'E':
+			case 'e':
+				eCount++;
+				break;
+
+			case 'F':
+			case 'f':
+				fCount++;
+				break;
+
+			case '\n':
+			case '\t':
+			case ' ':
+				break;
+
+			default:
+				cout << "Incorrect letter grade entered"  << endl
+					 << "Enter a new grade." << endl;
+				break;
+		}
+	}
+
+} 
+
+//Exibe um relatório baseado nas notas inseridas pelo usuário.
+void GradeBook::displayGradeReport(){
+	//Gera a saída de resultados.
+	cout << "Number  os students who received each letter grade:" << endl
+		 << "A: " << aCount
+		 << "B: " << bCount
+		 << "C: " << cCount
+		 << "D: " << dCount
+		 << "E: " << eCount
+		 << "F: " << fCount
+		 << endl;
 }
